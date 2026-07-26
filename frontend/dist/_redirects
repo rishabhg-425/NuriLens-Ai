@@ -1,0 +1,6 @@
+# Netlify Redirects for NutriLens SPA Routing & API Proxy
+# 1. Proxy API requests to backend service (replace URL with your deployed backend URL on Render/Railway)
+/api/*  https://nutrilens-api.onrender.com/api/:splat  200
+
+# 2. Single Page Application (SPA) routing fallback for Vite React
+/*  /index.html  200
